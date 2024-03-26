@@ -1,8 +1,16 @@
+# About
+
+This is a simple Music player app built using React Native. It uses the [React Native Track Player](https://www.npmjs.com/package/react-native-track-player) library for controlling the playback of audio tracks, used [Reaact Native Slider](https://www.npmjs.com/package/@react-native-community/slider) for the seekbar and [React Native Vector Icons](https://www.npmjs.com/package/react-native-vector-icons) for the icons.
+
+# Screenshots
+
+![Home Screen](./screenshots/home.png)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
