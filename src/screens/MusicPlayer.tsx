@@ -1,4 +1,11 @@
-import {View, StyleSheet, Dimensions, Image, FlatList} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Dimensions,
+  Image,
+  FlatList,
+  TouchableOpacity,
+} from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
 import TrackPlayer, {
   Event,
@@ -39,11 +46,13 @@ const MusicPlayer = () => {
       <View style={styles.listArtWrapper}>
         <View style={styles.albumContainer}>
           {track?.artwork && (
-            <Image
-              key={track.id}
-              style={styles.albumArtImg}
-              source={{uri: track?.artwork?.toString()}}
-            />
+            <TouchableOpacity onPress={() => TrackPlayer.skip(track.id - 1)}>
+              <Image
+                key={track.id}
+                style={styles.albumArtImg}
+                source={{uri: track?.artwork?.toString()}}
+              />
+            </TouchableOpacity>
           )}
         </View>
       </View>
